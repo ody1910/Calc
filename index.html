@@ -7,39 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
+    <div class="calculator-container">
         <h1>E-Commerce Revenue Calculator</h1>
-        
-        <div class="input-group">
-            <label for="traffic">Monthly Traffic:</label>
-            <input type="number" id="traffic" placeholder="Enter monthly traffic">
-        </div>
-        
-        <div class="input-group">
-            <label for="conversion-rate">Conversion Rate (%):</label>
-            <input type="number" id="conversion-rate" placeholder="Enter conversion rate">
-        </div>
-        
-        <div class="input-group">
-            <label for="avg-order-value">Average Order Value ($):</label>
-            <input type="number" id="avg-order-value" placeholder="Enter average order value">
-        </div>
-        
-        <div class="input-group">
-            <label for="cost">Cost per Item ($):</label>
-            <input type="number" id="cost" placeholder="Enter cost per item">
-        </div>
-        
-        <div class="input-group">
-            <label for="profit-margin">Profit Margin (%):</label>
-            <input type="number" id="profit-margin" placeholder="Enter profit margin">
-        </div>
-        
-        <button onclick="calculateRevenue()">Calculate Revenue</button>
-        
-        <div class="result">
-            <p id="revenue">Projected Monthly Revenue: $0.00</p>
-            <p id="profit">Projected Monthly Profit: $0.00</p>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="traffic">Monthly Traffic:</label>
+                <input type="number" id="traffic" placeholder="e.g., 10000">
+            </div>
+            <div class="input-group">
+                <label for="conversion-rate">Conversion Rate (%):</label>
+                <input type="number" id="conversion-rate" placeholder="e.g., 2">
+            </div>
+            <div class="input-group">
+                <label for="avg-order-value">Average Order Value ($):</label>
+                <input type="number" id="avg-order-value" placeholder="e.g., 50">
+            </div>
+            <div class="input-group">
+                <label for="cost">Cost per Item ($):</label>
+                <input type="number" id="cost" placeholder="e.g., 20">
+            </div>
+            <div class="input-group">
+                <label for="profit-margin">Profit Margin (%):</label>
+                <input type="number" id="profit-margin" placeholder="e.g., 30">
+            </div>
+            <button onclick="calculateRevenue()">Calculate</button>
+            <div class="result">
+                <p id="revenue">Projected Monthly Revenue: $0.00</p>
+                <p id="profit">Projected Monthly Profit: $0.00</p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
